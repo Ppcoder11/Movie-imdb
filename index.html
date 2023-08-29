@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body style="font-family: 'Bricolage Grotesque', sans-serif;">
+    
+    <div id="container">
+        <button style="font-size:1.2rem;color: ghostwhite;  border: none;background: none;height: 5.82vh; width:4vw;margin: 0.003% 0vw 40% 0.3vw; " id="back" onclick="goBack()"><span style="color: ghostwhite; "class="material-symbols-outlined">
+            home
+            </span>Home</button>
+
+        <div id="mainBox">
+            
+            <h1 style="font-family: 'Rowdies', cursive; margin-bottom: 7vh; font-size: 2.4rem;">MOVIE-MANIA</h1>
+            <h2 style="margin-bottom: 5vh;">Search your movie <span class="material-symbols-outlined">
+                movie
+                </span></h2>
+            <input type="text" id="year" placeholder="Enter year" style="margin-bottom: 2vh;">
+        <div id="movie">
+
+           
+            <input type="text" id="movieName" placeholder="Enter name">
+            <button id="btn" onclick="show()"><span class="material-symbols-outlined">
+                search
+                </span> </button>
+        </div>
+        <img src="" id="gif" style="height:26vh;width:19vw ;visibility: hidden; margin-top: 3vh; border-radius: 20px;">
+        </div>
+       
+
+        <div id="sideBox">
+            <div id="left">
+                <div id="details">
+                    <div id="firstDetails"><img src="" alt="pexels-photo-2752777" id="animation"></div>
+                    <div id="secondDetails"></div>
+                    
+                </div>
+                <div id="imgs">
+                    <img src="https://i.ibb.co/LPNfVkh/oppenheimer-ver3.jpg" alt="oppenheimer-ver3" border="0" class="imgg">
+                    <img src="https://i.ibb.co/MBxm6NS/talk-to-me.jpg" alt="talk-to-me" border="0" class="imgg">
+                    <img src="https://i.ibb.co/3BV8Q05/warm-season.jpg" alt="warm-season" border="0" class="imgg">
+                    
+                    
+                </div>
+            </div>
+            <div id="right">
+                <div id="one" class="circle" ><img src="https://i.ibb.co/WnS6Qj7/z4.jpg" alt="z4" class="smImgL"> <img src="https://i.ibb.co/nnfL9Gf/heads.jpg" style=" height: 24vh;  margin-left: 0.4vw;"></div>
+                <div id="two" class="circle" ><img src="https://i.ibb.co/XyjbXQb/z1.jpg" style=" height: 24vh; margin-left: 0.4vw;"><img src="https://i.ibb.co/C8sWbqk/z5.jpg" alt="z5" border="0" class="smImgR"></div>
+                <div id="three" class="circle" ><img src="https://i.ibb.co/4jGCgDc/Z9.jpg" alt="z4" class="smImgL"><img src="https://i.ibb.co/VwfQ757/z3.jpg" style=" height: 24vh; margin-left: 0.4vw;"></div>
+                <div id="four" class="circle" ><img src="https://i.ibb.co/f0XbXj7/z2.jpg" style=" height: 24vh; margin-left: 0.4vw;"><img src="https://i.ibb.co/wsYFp5j/Z11.jpg" alt="z5" border="0" class="smImgR"></div>
+            </div>
+            </div>
+           
+            
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

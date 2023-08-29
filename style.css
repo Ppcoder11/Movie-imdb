@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(1, 20, 36);
+  color: ghostwhite;
+}
+body #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container #back:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+body #container #mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 27vw;
+  height: 94vh;
+  margin-left: 4vw;
+}
+body #container #mainBox #year {
+  height: 5vh;
+  width: 16vw;
+  border-radius: 19px;
+}
+body #container #mainBox #movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container #mainBox #movie #movieName {
+  height: 5vh;
+  width: 16vw;
+  border-radius: 19px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body #container #mainBox #movie #btn {
+  height: 5.82vh;
+  width: 4vw;
+  border-radius: 19px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body #container #mainBox #movie #btn:hover {
+  cursor: pointer;
+}
+body #container #sideBox {
+  display: flex;
+  width: 60vw;
+  height: 93vh;
+  margin-left: 7vw;
+}
+body #container #sideBox #left {
+  display: flex;
+  flex-direction: column;
+}
+body #container #sideBox #left #details #animation {
+  height: 72vh;
+  margin-bottom: 1.6vh;
+  width: 24.3vw;
+}
+body #container #sideBox #left #details #det {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 13vw;
+}
+body #container #sideBox #left #imgs .imgg {
+  height: 24vh;
+  width: 8vw;
+}
+body #container #sideBox #right {
+  margin-left: 0.02vw;
+}
+body #container #sideBox #right .circle {
+  display: flex;
+  margin-top: 0.6vh;
+}
+body #container #sideBox #right .circle .smImgL {
+  height: 24vh;
+  width: 9vw;
+  margin-left: 0.3vw;
+}
+body #container #sideBox #right .circle .smImgR {
+  height: 24vh;
+  width: 9vw;
+  margin-left: 0.4vw;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,120 @@
+$imgLink1:"https://i.ibb.co/m5n6Ch3/pexels-photo-2752777.jpg";
+$imgLink2:"https://i.ibb.co/W52Y7kD/THE-AVENGERS-LEGAL-480x-progressive.webp";
+$imgLink2:"https://i.ibb.co/GFf16kH/harry.webp";
+$imgLink3:"https://i.ibb.co/0hyKS4f/jurassic.webp" ;
+$imgLink4:"https://i.ibb.co/DkDShB6/onward.webp" ;
+$imgLink5:"https://i.ibb.co/r43NW4N/spidy.webp" ;
+@mixin noBorderRight{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+@mixin noBorderleft{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        }
+body{ 
+    background-color: rgb(1, 20, 36);
+    color: ghostwhite;
+    
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    #back:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+       #mainBox{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width:27vw;
+          height: 94vh;
+          margin-left: 4vw;
+        //   z-index: -1;
+        //   border:3px solid white;
+          #year{
+            height: 5vh;
+            width: 16vw;
+            border-radius: 19px; 
+          }
+          #movie{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border:3px solid white;
+            #movieName{
+                height: 5vh;
+                width: 16vw;
+                border-radius: 19px; 
+                @include noBorderRight;               
+            }
+            #btn{
+                height: 5.82vh;
+                width:4vw;
+                border-radius: 19px;
+                @include noBorderleft;
+               
+                
+            }
+            #btn:hover{
+                cursor: pointer;
+            }
+
+          }
+       }
+       #sideBox{
+        display: flex;
+        width:60vw;
+        height: 93vh;
+        margin-left: 7vw;
+        // border:3px solid white;
+        #left{
+        display: flex;
+        flex-direction: column;
+        #details{
+            #animation{
+                height:72vh;
+                margin-bottom: 1.6vh;
+                width: 24.3vw;
+            }
+            #det{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-left: 13vw;
+            }
+        }
+        #imgs{
+            .imgg{
+                height: 24vh;
+                width:8vw;
+            }
+        }
+        }
+        #right{
+            margin-left: 0.02vw;
+            .circle{
+                display: flex;
+                margin-top: 0.6vh;
+                .smImgL{
+                    height: 24vh;
+                    width: 9vw;
+                    margin-left: 0.3vw;
+                }
+                .smImgR{
+                    height: 24vh;
+                    width: 9vw;
+                    margin-left: 0.4vw;
+                }
+            }
+        }
+   
+       }
+    }
+}
+
+
+
